@@ -10,13 +10,13 @@ void inven();
 void agregarElemento();
 void retirarElemento();
 void mostrarInventario();
-int inventario[CAPACIDAD_MAXIMA];  // Arreglo para almacenar el inventario de elementos
+int inventario[CAPACIDAD_MAXIMA]; // Arreglo para almacenar el inventario de elementos
 int cantidadElementos = 0;        // Variable global para llevar un registro de la cantidad actual de elementos en el inventario
 int validarNumero(char mensaje[], int ri, int rf);
 
 int main()
 {
-    int op;
+    char op;
 
     // Solicitar al usuario que ingrese una opción válida utilizando la función validarNumero
     op = validarNumero("Ingrese el número de la operación que desea realizar:\n1. Numero binario\n2. Calificacion\n3. Inventarios\n", 1, 3);
@@ -78,12 +78,11 @@ void binario()
 // Función para convertir una calificación numérica en una calificación en letra
 void calificaciones()
 {
-    int cali;
+    char cali;
     char letra;
 
     // Solicitar al usuario que ingrese una calificación numérica entre 0 y 100
-    printf("Ingrese una calificacion numerica entre 0 y 100: ");
-    scanf("%d", &cali);
+    cali= validarNumero("Ingrese una calificacion numerica entre 0 y 100: ",0,100);
 
     // Verificar si la calificación está dentro del rango válido (0-100)
     if (cali < 0 || cali > 100)
