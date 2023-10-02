@@ -1,3 +1,11 @@
+/*
+Barrios Retana Lizeth 372813
+01-10-2023
+    1.Un programa que permita a los usuarios ingresar un número entero, especificar el número de bits que se deben considerar y luego analizar el número en términos de bits encendidos, posiciones y representación binaria.
+    2.Crear un programa que tome una calificación numérica y la convierta en una calificación en letra utilizando operadores ternarios.
+    3.El objetivo de este ejercicio es simular un sistema básico de gestión de inventario en C, donde los usuarios pueden agregar y retirar elementos del inventario.
+Practica2_TiposOperadoresyExpresiones_BarriosRetana_Lizeth
+*/
 #include <stdio.h>
 
 // Definición de una macro para la capacidad máxima del inventario
