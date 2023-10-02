@@ -1,10 +1,11 @@
 /*
-Barrios Retana Lizeth 372813
-01-10-2023
+Nombre del archivo: 1.c
+Autor: Lizeth Barrios Retana
+Fecha de creación: 27 de Agosto de 2023
+Descripción: Este codigo contiene 3 opciones para ejecutar el codigo:
     1.Un programa que permita a los usuarios ingresar un número entero, especificar el número de bits que se deben considerar y luego analizar el número en términos de bits encendidos, posiciones y representación binaria.
     2.Crear un programa que tome una calificación numérica y la convierta en una calificación en letra utilizando operadores ternarios.
     3.El objetivo de este ejercicio es simular un sistema básico de gestión de inventario en C, donde los usuarios pueden agregar y retirar elementos del inventario.
-Practica2_TiposOperadoresyExpresiones_BarriosRetana_Lizeth
 */
 #include <stdio.h>
 
@@ -90,7 +91,7 @@ void calificaciones()
     char letra;
 
     // Solicitar al usuario que ingrese una calificación numérica entre 0 y 100
-    cali= validarNumero("Ingrese una calificacion numerica entre 0 y 100: ",0,100);
+    cali = validarNumero("Ingrese una calificacion numerica entre 0 y 100: ", 0, 100);
 
     // Verificar si la calificación está dentro del rango válido (0-100)
     if (cali < 0 || cali > 100)
