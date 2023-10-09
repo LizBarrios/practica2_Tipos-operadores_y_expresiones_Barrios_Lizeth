@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Lizeth2004/OneDrive/Escritorio/lenguaje c/practica2_Tipos,operadores_y_expresiones_Barrios_Lizeth",
-      "program": "c:/Users/Lizeth2004/OneDrive/Escritorio/lenguaje c/practica2_Tipos,operadores_y_expresiones_Barrios_Lizeth/build/Debug/outDebug",
+      "cwd": "c:/Users/Lizeth2004/OneDrive/Escritorio/lenguaje c/practicas/practica2_Tipos,operadores_y_expresiones_Barrios_Lizeth",
+      "program": "c:/Users/Lizeth2004/OneDrive/Escritorio/lenguaje c/practicas/practica2_Tipos,operadores_y_expresiones_Barrios_Lizeth/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
