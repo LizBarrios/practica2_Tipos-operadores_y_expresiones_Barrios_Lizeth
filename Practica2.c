@@ -93,35 +93,26 @@ void calificaciones()
     // Solicitar al usuario que ingrese una calificación numérica entre 0 y 100
     cali = validarNumero("Ingrese una calificacion numerica entre 0 y 100: ", 0, 100);
 
-    // Verificar si la calificación está dentro del rango válido (0-100)
-    if (cali < 0 || cali > 100)
+    // Asignar la calificación en letra según rangos predefinidos
+    if (cali < 60)
     {
-        printf("ERROR: La calificacion debe estar entre 0 y 100.\n");
-        return;
+        letra = 'F';
+    }
+    else if (cali < 70)
+    {
+        letra = 'D';
+    }
+    else if (cali < 80)
+    {
+        letra = 'C';
+    }
+    else if (cali < 90)
+    {
+        letra = 'B';
     }
     else
     {
-        // Asignar la calificación en letra según rangos predefinidos
-        if (cali < 60)
-        {
-            letra = 'F';
-        }
-        else if (cali < 70)
-        {
-            letra = 'D';
-        }
-        else if (cali < 80)
-        {
-            letra = 'C';
-        }
-        else if (cali < 90)
-        {
-            letra = 'B';
-        }
-        else
-        {
-            letra = 'A';
-        }
+        letra = 'A';
     }
 
     // Mostrar la calificación numérica y la calificación en letra
@@ -136,14 +127,7 @@ void inven()
 
     while (1)
     {
-        // Mostrar el menú de opciones
-        printf("\n--- Menú de Inventario ---\n");
-        printf("1. Agregar elemento\n");
-        printf("2. Retirar elemento\n");
-        printf("3. Mostrar inventario\n");
-        printf("4. Salir\n");
-        printf("Seleccione una opción: ");
-        scanf("%d", &opcion);
+        opcion = validarNumero(" \n--- Menú de Inventario ---\n1. Agregar elemento\n2. Retirar elemento\n3. Mostrar inventario\n4. Salir\nSeleccione una opción:\n", 1, 4);
 
         // Evaluar la opción seleccionada por el usuario
         switch (opcion)
@@ -160,8 +144,6 @@ void inven()
         case 4:
             printf("Saliendo del programa.\n");
             return;
-        default:
-            printf("Opción no válida. Por favor, seleccione una opción válida.\n");
         }
     }
 }
